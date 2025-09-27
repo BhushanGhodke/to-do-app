@@ -1,0 +1,123 @@
+.logo-img {
+  max-width: 120px;
+  max-height: 40px;
+}
+.title-text {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #0d6efd;
+}
+.btn {
+  min-width: 100px;
+}
+.flex-grow-1{
+  margin-left: 20px;
+}
+.navbar {
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  height: 80px;
+}
+.navbar-brand img {
+  max-height: 40px;
+  max-width: 120px;
+}
+.mx-auto img {
+  max-height: 40px;
+  max-width: 220px;
+ 
+}
+@media (max-width: 767px) {
+  .title-text {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
+.card {
+  width: 320px;
+  height: 250px;
+  margin: 16px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
+  border: 1.5px solid #e3eafc;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0eafc 100%);
+  transition: box-shadow 0.2s, background 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  background: linear-gradient(270deg, #667eea, #764ba2, #43cea2, #185a9d, #667eea);
+  background-size: 1000% 1000%;
+  animation: gradientBG 10s ease infinite;
+  color: #fff;
+  border-radius: 18px 18px 0 0;
+  padding: 18px 0 12px 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+@keyframes gradientBG {
+  0% {background-position:0% 50%}
+  50% {background-position:100% 50%}
+  100% {background-position:0% 50%}
+}
+
+.card-footer {
+  border-radius: 0 0 18px 18px;
+  background: none;
+  padding: 16px 0 16px 0;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 8px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 0;
+  margin-top: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  font-size: 1.1rem;
+}
+
+.btn1 {
+  border-radius: 8px;
+  background: linear-gradient(90deg, #f0684a 0%, #e3440a 100%);
+  color: #fff;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 10px 0;
+  margin-top: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  font-size: 1.1rem;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 4px 16px rgba(31, 38, 135, 0.12);
+}
+
+@media (max-width: 700px) {
+  .d-flex.flex-wrap {
+    gap: 16px;
+  }
+  .card {
+    min-width: 90vw;
+    max-width: 98vw;
+    margin: 8px auto;
+  }
+}
+.bi{
+    width: 30px;
+  
+}

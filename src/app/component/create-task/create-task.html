@@ -1,0 +1,30 @@
+<div class="login-bg d-flex justify-content-center align-items-center ">
+  <div class="card login-card shadow border-0 p-4" style="max-width: 400px; width: 100%;">
+    <div class="card-header">
+      <h2 class="text-center mb-0 login-title">Create Task</h2>
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="createTask()" >
+            <div class="form-floating mb-3">
+          <input [(ngModel)]="task.task" type="text" name="task" id="task" class="form-control" placeholder="Enter Task ">
+          <label for="username">Task</label>
+            </div>
+         <div class="form-floating mb-3">
+          
+            <select [(ngModel)]="task.status" type="text" name="status" id="status" class="form-control" required>
+              <option value="PENDING">PEDNDING</option>
+              <option value="PROGRESS">PROGRESS</option>
+              <option value="COMPLETE">COMPLETE</option>
+            </select>
+            <label for="status">Status</label>
+            </div>
+           <div class="card-footer">
+          <button type="submit" class="btn btn-primary w-50" >Create Task</button>
+          <button  class="btn btn-danger w-50 " routerLink="/dashboard">Close</button>
+           </div>
+      </form> 
+    </div>
+
+</div>
+</div>
+
