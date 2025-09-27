@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from '../environment.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -9,14 +10,14 @@ export class LoginService {
   constructor(private http:HttpClient){
 
   }
-
+baseUrl:string=environment.apiUrl;
   public registerUser(user:any){
-    return  this.http.post(`http://localhost:1111/user/register`,user);
+    return  this.http.post(`${this.baseUrl}/user/register`,user);
   }
 
   
   public loginUser(login:any){
-    return  this.http.post(`http://localhost:1111/user/login`,login);
+    return  this.http.post(`${this.baseUrl}/user/login`,login);
   }
 
     //set a UserDetails
